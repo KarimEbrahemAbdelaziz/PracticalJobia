@@ -18,10 +18,11 @@
 		BC3C29302736D4DD00EE9934 /* FirebaseClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3C292F2736D4DD00EE9934 /* FirebaseClient.swift */; };
 		BC3C29322736D66500EE9934 /* FirebaseClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3C29312736D66500EE9934 /* FirebaseClientError.swift */; };
 		BC3C29352736D83B00EE9934 /* APIAuthenticationGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3C29342736D83B00EE9934 /* APIAuthenticationGateway.swift */; };
+		BC3C293B2736E1C100EE9934 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3C29392736E1C100EE9934 /* LoginViewController.swift */; };
+		BC3C293C2736E1C100EE9934 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC3C293A2736E1C100EE9934 /* LoginViewController.xib */; };
+		BC3C293E2736E1CB00EE9934 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3C293D2736E1CB00EE9934 /* LoginPresenter.swift */; };
+		BC3C29402736E1D900EE9934 /* LoginConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3C293F2736E1D900EE9934 /* LoginConfigurator.swift */; };
 		BCAF3CFF27356D90000C1F71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAF3CFE27356D90000C1F71 /* AppDelegate.swift */; };
-		BCAF3D0127356D90000C1F71 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAF3D0027356D90000C1F71 /* SceneDelegate.swift */; };
-		BCAF3D0327356D90000C1F71 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAF3D0227356D90000C1F71 /* ViewController.swift */; };
-		BCAF3D0627356D90000C1F71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCAF3D0427356D90000C1F71 /* Main.storyboard */; };
 		BCAF3D0827356D92000C1F71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCAF3D0727356D92000C1F71 /* Assets.xcassets */; };
 		BCAF3D0B27356D92000C1F71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCAF3D0927356D92000C1F71 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -39,11 +40,12 @@
 		BC3C292F2736D4DD00EE9934 /* FirebaseClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseClient.swift; sourceTree = "<group>"; };
 		BC3C29312736D66500EE9934 /* FirebaseClientError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseClientError.swift; sourceTree = "<group>"; };
 		BC3C29342736D83B00EE9934 /* APIAuthenticationGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIAuthenticationGateway.swift; sourceTree = "<group>"; };
+		BC3C29392736E1C100EE9934 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		BC3C293A2736E1C100EE9934 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		BC3C293D2736E1CB00EE9934 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		BC3C293F2736E1D900EE9934 /* LoginConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginConfigurator.swift; sourceTree = "<group>"; };
 		BCAF3CFB27356D90000C1F71 /* PracticalJobia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PracticalJobia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCAF3CFE27356D90000C1F71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BCAF3D0027356D90000C1F71 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BCAF3D0227356D90000C1F71 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BCAF3D0527356D90000C1F71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BCAF3D0727356D92000C1F71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCAF3D0A27356D92000C1F71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BCAF3D0C27356D92000C1F71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -165,6 +167,33 @@
 			path = Gateways;
 			sourceTree = "<group>";
 		};
+		BC3C29362736E19800EE9934 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				BC3C29382736E1AB00EE9934 /* Authentication */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		BC3C29372736E1A700EE9934 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				BC3C29392736E1C100EE9934 /* LoginViewController.swift */,
+				BC3C293A2736E1C100EE9934 /* LoginViewController.xib */,
+				BC3C293D2736E1CB00EE9934 /* LoginPresenter.swift */,
+				BC3C293F2736E1D900EE9934 /* LoginConfigurator.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		BC3C29382736E1AB00EE9934 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				BC3C29372736E1A700EE9934 /* Login */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
 		BCAF3CF227356D90000C1F71 = {
 			isa = PBXGroup;
 			children = (
@@ -188,11 +217,9 @@
 			children = (
 				BC3C29182736C5EB00EE9934 /* Core */,
 				BC3C292A2736D37000EE9934 /* EntityGateway */,
+				BC3C29362736E19800EE9934 /* Scenes */,
 				BC3C29252736CFD000EE9934 /* Extensions */,
 				BCAF3CFE27356D90000C1F71 /* AppDelegate.swift */,
-				BCAF3D0027356D90000C1F71 /* SceneDelegate.swift */,
-				BCAF3D0227356D90000C1F71 /* ViewController.swift */,
-				BCAF3D0427356D90000C1F71 /* Main.storyboard */,
 				BCAF3D0727356D92000C1F71 /* Assets.xcassets */,
 				BCAF3D0927356D92000C1F71 /* LaunchScreen.storyboard */,
 				BCAF3D0C27356D92000C1F71 /* Info.plist */,
@@ -262,9 +289,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC3C293C2736E1C100EE9934 /* LoginViewController.xib in Resources */,
 				BCAF3D0B27356D92000C1F71 /* LaunchScreen.storyboard in Resources */,
 				BCAF3D0827356D92000C1F71 /* Assets.xcassets in Resources */,
-				BCAF3D0627356D90000C1F71 /* Main.storyboard in Resources */,
 				BC3C292D2736D40D00EE9934 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,30 +365,23 @@
 			files = (
 				BC3C29272736CFDC00EE9934 /* String+Extenions.swift in Sources */,
 				BC3C29352736D83B00EE9934 /* APIAuthenticationGateway.swift in Sources */,
+				BC3C293E2736E1CB00EE9934 /* LoginPresenter.swift in Sources */,
+				BC3C29402736E1D900EE9934 /* LoginConfigurator.swift in Sources */,
 				BC3C291B2736C60300EE9934 /* User.swift in Sources */,
 				BC3C29322736D66500EE9934 /* FirebaseClientError.swift in Sources */,
 				BC3C29212736C80400EE9934 /* LoginParameters.swift in Sources */,
 				BC3C29242736CCC000EE9934 /* AuthenticationGateway.swift in Sources */,
 				BC3C29292736D1D000EE9934 /* UserLoginError.swift in Sources */,
 				BC3C291F2736C73700EE9934 /* UserLogin.swift in Sources */,
-				BCAF3D0327356D90000C1F71 /* ViewController.swift in Sources */,
 				BC3C29302736D4DD00EE9934 /* FirebaseClient.swift in Sources */,
 				BCAF3CFF27356D90000C1F71 /* AppDelegate.swift in Sources */,
-				BCAF3D0127356D90000C1F71 /* SceneDelegate.swift in Sources */,
+				BC3C293B2736E1C100EE9934 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		BCAF3D0427356D90000C1F71 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BCAF3D0527356D90000C1F71 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BCAF3D0927356D92000C1F71 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -502,7 +522,6 @@
 				INFOPLIST_FILE = PracticalJobia/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -532,7 +551,6 @@
 				INFOPLIST_FILE = PracticalJobia/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;

@@ -11,6 +11,8 @@ import Firebase
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    var window: UIWindow?
+
     func application(
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
@@ -18,24 +20,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         FirebaseApp.configure()
 
+        window = UIWindow(frame: UIScreen.main.bounds)
+        let rootVC: LoginViewController = LoginViewController()
+        let rootNC = UINavigationController(rootViewController: rootVC)
+        rootNC.navigationBar.isHidden = true
+        rootNC.interactivePopGestureRecognizer?.isEnabled = false
+        window?.rootViewController = rootNC
+        window?.makeKeyAndVisible()
+
         return true
-    }
-
-    // MARK: UISceneSession Lifecycle
-
-    func application(
-        _ application: UIApplication,
-        configurationForConnecting connectingSceneSession: UISceneSession,
-        options: UIScene.ConnectionOptions) -> UISceneConfiguration {
-        // Called when a new scene session is being created.
-        // Use this method to select a configuration to create the new scene with.
-        return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
-    }
-
-    func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
-        // Called when the user discards a scene session.
-        // Use this method to release any resources
-        // That were specific to the discarded scenes, as they will not return.
     }
 
 }
