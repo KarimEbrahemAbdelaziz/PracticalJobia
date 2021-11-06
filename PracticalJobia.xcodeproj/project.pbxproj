@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		774F2EE534156A67EBE11208 /* Pods_PracticalJobia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D424CFCD72C0F65AEE6F624 /* Pods_PracticalJobia.framework */; };
+		BC3C291B2736C60300EE9934 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3C291A2736C60300EE9934 /* User.swift */; };
 		BCAF3CFF27356D90000C1F71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAF3CFE27356D90000C1F71 /* AppDelegate.swift */; };
 		BCAF3D0127356D90000C1F71 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAF3D0027356D90000C1F71 /* SceneDelegate.swift */; };
 		BCAF3D0327356D90000C1F71 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAF3D0227356D90000C1F71 /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		05808325F39C49FDBFBD6940 /* Pods-PracticalJobia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PracticalJobia.debug.xcconfig"; path = "Target Support Files/Pods-PracticalJobia/Pods-PracticalJobia.debug.xcconfig"; sourceTree = "<group>"; };
 		9D424CFCD72C0F65AEE6F624 /* Pods_PracticalJobia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PracticalJobia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC3C291A2736C60300EE9934 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		BCAF3CFB27356D90000C1F71 /* PracticalJobia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PracticalJobia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCAF3CFE27356D90000C1F71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCAF3D0027356D90000C1F71 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,22 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		BC3C29182736C5EB00EE9934 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				BC3C29192736C5F400EE9934 /* Entities */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		BC3C29192736C5F400EE9934 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				BC3C291A2736C60300EE9934 /* User.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
 		BCAF3CF227356D90000C1F71 = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +98,7 @@
 		BCAF3CFD27356D90000C1F71 /* PracticalJobia */ = {
 			isa = PBXGroup;
 			children = (
+				BC3C29182736C5EB00EE9934 /* Core */,
 				BCAF3CFE27356D90000C1F71 /* AppDelegate.swift */,
 				BCAF3D0027356D90000C1F71 /* SceneDelegate.swift */,
 				BCAF3D0227356D90000C1F71 /* ViewController.swift */,
@@ -225,6 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC3C291B2736C60300EE9934 /* User.swift in Sources */,
 				BCAF3D0327356D90000C1F71 /* ViewController.swift in Sources */,
 				BCAF3CFF27356D90000C1F71 /* AppDelegate.swift in Sources */,
 				BCAF3D0127356D90000C1F71 /* SceneDelegate.swift in Sources */,
