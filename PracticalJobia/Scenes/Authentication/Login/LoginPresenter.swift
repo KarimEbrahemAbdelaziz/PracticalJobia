@@ -25,10 +25,10 @@ class LoginPresenterImplementation: LoginPresenter {
 
         loginUseCase.login(parameters: parameters) { result in
             switch result {
-            case let .success(user):
-                print(user.name)
-            case let .failure(error):
-                print(error.localizedDescription)
+            case .success:
+                break
+            case .failure:
+                break
             }
         }
     }
