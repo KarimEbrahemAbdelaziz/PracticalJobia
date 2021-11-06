@@ -15,6 +15,9 @@
 		BC3C29272736CFDC00EE9934 /* String+Extenions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3C29262736CFDC00EE9934 /* String+Extenions.swift */; };
 		BC3C29292736D1D000EE9934 /* UserLoginError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3C29282736D1D000EE9934 /* UserLoginError.swift */; };
 		BC3C292D2736D40D00EE9934 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC3C292C2736D40D00EE9934 /* GoogleService-Info.plist */; };
+		BC3C29302736D4DD00EE9934 /* FirebaseClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3C292F2736D4DD00EE9934 /* FirebaseClient.swift */; };
+		BC3C29322736D66500EE9934 /* FirebaseClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3C29312736D66500EE9934 /* FirebaseClientError.swift */; };
+		BC3C29352736D83B00EE9934 /* APIAuthenticationGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3C29342736D83B00EE9934 /* APIAuthenticationGateway.swift */; };
 		BCAF3CFF27356D90000C1F71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAF3CFE27356D90000C1F71 /* AppDelegate.swift */; };
 		BCAF3D0127356D90000C1F71 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAF3D0027356D90000C1F71 /* SceneDelegate.swift */; };
 		BCAF3D0327356D90000C1F71 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAF3D0227356D90000C1F71 /* ViewController.swift */; };
@@ -33,6 +36,9 @@
 		BC3C29262736CFDC00EE9934 /* String+Extenions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extenions.swift"; sourceTree = "<group>"; };
 		BC3C29282736D1D000EE9934 /* UserLoginError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoginError.swift; sourceTree = "<group>"; };
 		BC3C292C2736D40D00EE9934 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BC3C292F2736D4DD00EE9934 /* FirebaseClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseClient.swift; sourceTree = "<group>"; };
+		BC3C29312736D66500EE9934 /* FirebaseClientError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseClientError.swift; sourceTree = "<group>"; };
+		BC3C29342736D83B00EE9934 /* APIAuthenticationGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIAuthenticationGateway.swift; sourceTree = "<group>"; };
 		BCAF3CFB27356D90000C1F71 /* PracticalJobia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PracticalJobia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCAF3CFE27356D90000C1F71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCAF3D0027356D90000C1F71 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -136,8 +142,27 @@
 		BC3C292B2736D3AD00EE9934 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				BC3C29332736D82800EE9934 /* Gateways */,
+				BC3C292E2736D4C400EE9934 /* Client */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		BC3C292E2736D4C400EE9934 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				BC3C292F2736D4DD00EE9934 /* FirebaseClient.swift */,
+				BC3C29312736D66500EE9934 /* FirebaseClientError.swift */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		BC3C29332736D82800EE9934 /* Gateways */ = {
+			isa = PBXGroup;
+			children = (
+				BC3C29342736D83B00EE9934 /* APIAuthenticationGateway.swift */,
+			);
+			path = Gateways;
 			sourceTree = "<group>";
 		};
 		BCAF3CF227356D90000C1F71 = {
@@ -312,12 +337,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC3C29272736CFDC00EE9934 /* String+Extenions.swift in Sources */,
+				BC3C29352736D83B00EE9934 /* APIAuthenticationGateway.swift in Sources */,
 				BC3C291B2736C60300EE9934 /* User.swift in Sources */,
+				BC3C29322736D66500EE9934 /* FirebaseClientError.swift in Sources */,
 				BC3C29212736C80400EE9934 /* LoginParameters.swift in Sources */,
 				BC3C29242736CCC000EE9934 /* AuthenticationGateway.swift in Sources */,
 				BC3C29292736D1D000EE9934 /* UserLoginError.swift in Sources */,
 				BC3C291F2736C73700EE9934 /* UserLogin.swift in Sources */,
 				BCAF3D0327356D90000C1F71 /* ViewController.swift in Sources */,
+				BC3C29302736D4DD00EE9934 /* FirebaseClient.swift in Sources */,
 				BCAF3CFF27356D90000C1F71 /* AppDelegate.swift in Sources */,
 				BCAF3D0127356D90000C1F71 /* SceneDelegate.swift in Sources */,
 			);

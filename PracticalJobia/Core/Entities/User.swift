@@ -12,5 +12,6 @@ struct User {
     var name: String
     var email: String
     var phoneNumber: String
+    var isEmailVerified: Bool
     var about: String?
 }
