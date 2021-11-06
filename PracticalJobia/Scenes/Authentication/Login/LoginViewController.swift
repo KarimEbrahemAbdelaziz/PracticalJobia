@@ -7,23 +7,32 @@
 
 import UIKit
 
+protocol LoginView: AnyObject {
+
+}
+
 class LoginViewController: UIViewController {
+
+    @IBOutlet private weak var emailTextField: UITextField!
+    @IBOutlet private weak var passwordTextField: UITextField!
+    @IBOutlet private weak var loginButton: UIButton!
+
+    var presenter: LoginPresenter!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
 
+    @IBAction private func login(_ sender: UIButton) {
+        guard let email = emailTextField.text,
+              let password = passwordTextField.text else { return }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        presenter.login(with: email, and: password)
     }
-    */
+
+}
+
+extension LoginViewController: LoginView {
 
 }

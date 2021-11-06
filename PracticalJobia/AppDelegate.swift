@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseApp.configure()
 
         window = UIWindow(frame: UIScreen.main.bounds)
-        let rootVC: LoginViewController = LoginViewController()
+        let rootVC: LoginViewController = LoginModuleConfigurator.configure()
         let rootNC = UINavigationController(rootViewController: rootVC)
         rootNC.navigationBar.isHidden = true
         rootNC.interactivePopGestureRecognizer?.isEnabled = false

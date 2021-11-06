@@ -10,6 +10,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="PracticalJobia" customModuleProvider="target">
             <connections>
+                <outlet property="emailTextField" destination="3R1-L7-Rdv" id="dyt-XQ-xNk"/>
+                <outlet property="loginButton" destination="H6B-6p-kr9" id="Jdd-Ad-EK9"/>
+                <outlet property="passwordTextField" destination="ZnK-pn-aEE" id="ChQ-IA-VOK"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,18 +21,47 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Jobia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l0o-aB-KPC">
-                    <rect key="frame" x="139" y="437.5" width="136" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="HL2-vG-6h5">
+                    <rect key="frame" x="24" y="393.5" width="366" height="109"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3R1-L7-Rdv">
+                            <rect key="frame" x="0.0" y="0.0" width="366" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="wnn-5R-hW1"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZnK-pn-aEE">
+                            <rect key="frame" x="0.0" y="69" width="366" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="F0l-2R-zWH"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H6B-6p-kr9">
+                    <rect key="frame" x="24" y="799" width="366" height="31"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Login"/>
+                    <connections>
+                        <action selector="login:" destination="-1" eventType="touchUpInside" id="1uG-Tm-wMs"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="l0o-aB-KPC" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="TZw-dQ-GJV"/>
-                <constraint firstItem="l0o-aB-KPC" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="dZv-W0-3T9"/>
+                <constraint firstItem="HL2-vG-6h5" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="8Y6-VX-eaC"/>
+                <constraint firstItem="HL2-vG-6h5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="EWT-Va-2qm"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="H6B-6p-kr9" secondAttribute="bottom" constant="32" id="GAV-w1-jhw"/>
+                <constraint firstItem="HL2-vG-6h5" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Hpd-oE-cTA"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="H6B-6p-kr9" secondAttribute="trailing" constant="24" id="LdE-XF-wDJ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="HL2-vG-6h5" secondAttribute="trailing" constant="24" id="Ova-w6-ZTH"/>
+                <constraint firstItem="H6B-6p-kr9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="TdH-Mm-pNV"/>
+                <constraint firstItem="H6B-6p-kr9" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="wuu-2O-D9I"/>
             </constraints>
             <point key="canvasLocation" x="139" y="133"/>
         </view>
