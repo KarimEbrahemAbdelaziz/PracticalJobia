@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		774F2EE534156A67EBE11208 /* Pods_PracticalJobia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D424CFCD72C0F65AEE6F624 /* Pods_PracticalJobia.framework */; };
 		BC3C291B2736C60300EE9934 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3C291A2736C60300EE9934 /* User.swift */; };
+		BC3C291F2736C73700EE9934 /* UserLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3C291E2736C73700EE9934 /* UserLogin.swift */; };
+		BC3C29212736C80400EE9934 /* LoginParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3C29202736C80400EE9934 /* LoginParameters.swift */; };
+		BC3C29242736CCC000EE9934 /* AuthenticationGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3C29232736CCC000EE9934 /* AuthenticationGateway.swift */; };
+		BC3C29272736CFDC00EE9934 /* String+Extenions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3C29262736CFDC00EE9934 /* String+Extenions.swift */; };
+		BC3C29292736D1D000EE9934 /* UserLoginError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3C29282736D1D000EE9934 /* UserLoginError.swift */; };
+		BC3C292D2736D40D00EE9934 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC3C292C2736D40D00EE9934 /* GoogleService-Info.plist */; };
 		BCAF3CFF27356D90000C1F71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAF3CFE27356D90000C1F71 /* AppDelegate.swift */; };
 		BCAF3D0127356D90000C1F71 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAF3D0027356D90000C1F71 /* SceneDelegate.swift */; };
 		BCAF3D0327356D90000C1F71 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAF3D0227356D90000C1F71 /* ViewController.swift */; };
@@ -21,6 +27,12 @@
 		05808325F39C49FDBFBD6940 /* Pods-PracticalJobia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PracticalJobia.debug.xcconfig"; path = "Target Support Files/Pods-PracticalJobia/Pods-PracticalJobia.debug.xcconfig"; sourceTree = "<group>"; };
 		9D424CFCD72C0F65AEE6F624 /* Pods_PracticalJobia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PracticalJobia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC3C291A2736C60300EE9934 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		BC3C291E2736C73700EE9934 /* UserLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLogin.swift; sourceTree = "<group>"; };
+		BC3C29202736C80400EE9934 /* LoginParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginParameters.swift; sourceTree = "<group>"; };
+		BC3C29232736CCC000EE9934 /* AuthenticationGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationGateway.swift; sourceTree = "<group>"; };
+		BC3C29262736CFDC00EE9934 /* String+Extenions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extenions.swift"; sourceTree = "<group>"; };
+		BC3C29282736D1D000EE9934 /* UserLoginError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoginError.swift; sourceTree = "<group>"; };
+		BC3C292C2736D40D00EE9934 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BCAF3CFB27356D90000C1F71 /* PracticalJobia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PracticalJobia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCAF3CFE27356D90000C1F71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCAF3D0027356D90000C1F71 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +76,8 @@
 		BC3C29182736C5EB00EE9934 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				BC3C29222736CCA700EE9934 /* Gateways */,
+				BC3C291C2736C6ED00EE9934 /* UseCases */,
 				BC3C29192736C5F400EE9934 /* Entities */,
 			);
 			path = Core;
@@ -75,6 +89,55 @@
 				BC3C291A2736C60300EE9934 /* User.swift */,
 			);
 			path = Entities;
+			sourceTree = "<group>";
+		};
+		BC3C291C2736C6ED00EE9934 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				BC3C291D2736C71300EE9934 /* UserLogin */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		BC3C291D2736C71300EE9934 /* UserLogin */ = {
+			isa = PBXGroup;
+			children = (
+				BC3C291E2736C73700EE9934 /* UserLogin.swift */,
+				BC3C29202736C80400EE9934 /* LoginParameters.swift */,
+				BC3C29282736D1D000EE9934 /* UserLoginError.swift */,
+			);
+			path = UserLogin;
+			sourceTree = "<group>";
+		};
+		BC3C29222736CCA700EE9934 /* Gateways */ = {
+			isa = PBXGroup;
+			children = (
+				BC3C29232736CCC000EE9934 /* AuthenticationGateway.swift */,
+			);
+			path = Gateways;
+			sourceTree = "<group>";
+		};
+		BC3C29252736CFD000EE9934 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BC3C29262736CFDC00EE9934 /* String+Extenions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BC3C292A2736D37000EE9934 /* EntityGateway */ = {
+			isa = PBXGroup;
+			children = (
+				BC3C292B2736D3AD00EE9934 /* API */,
+			);
+			path = EntityGateway;
+			sourceTree = "<group>";
+		};
+		BC3C292B2736D3AD00EE9934 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 		BCAF3CF227356D90000C1F71 = {
@@ -99,6 +162,8 @@
 			isa = PBXGroup;
 			children = (
 				BC3C29182736C5EB00EE9934 /* Core */,
+				BC3C292A2736D37000EE9934 /* EntityGateway */,
+				BC3C29252736CFD000EE9934 /* Extensions */,
 				BCAF3CFE27356D90000C1F71 /* AppDelegate.swift */,
 				BCAF3D0027356D90000C1F71 /* SceneDelegate.swift */,
 				BCAF3D0227356D90000C1F71 /* ViewController.swift */,
@@ -106,6 +171,7 @@
 				BCAF3D0727356D92000C1F71 /* Assets.xcassets */,
 				BCAF3D0927356D92000C1F71 /* LaunchScreen.storyboard */,
 				BCAF3D0C27356D92000C1F71 /* Info.plist */,
+				BC3C292C2736D40D00EE9934 /* GoogleService-Info.plist */,
 			);
 			path = PracticalJobia;
 			sourceTree = "<group>";
@@ -174,6 +240,7 @@
 				BCAF3D0B27356D92000C1F71 /* LaunchScreen.storyboard in Resources */,
 				BCAF3D0827356D92000C1F71 /* Assets.xcassets in Resources */,
 				BCAF3D0627356D90000C1F71 /* Main.storyboard in Resources */,
+				BC3C292D2736D40D00EE9934 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,7 +311,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC3C29272736CFDC00EE9934 /* String+Extenions.swift in Sources */,
 				BC3C291B2736C60300EE9934 /* User.swift in Sources */,
+				BC3C29212736C80400EE9934 /* LoginParameters.swift in Sources */,
+				BC3C29242736CCC000EE9934 /* AuthenticationGateway.swift in Sources */,
+				BC3C29292736D1D000EE9934 /* UserLoginError.swift in Sources */,
+				BC3C291F2736C73700EE9934 /* UserLogin.swift in Sources */,
 				BCAF3D0327356D90000C1F71 /* ViewController.swift in Sources */,
 				BCAF3CFF27356D90000C1F71 /* AppDelegate.swift in Sources */,
 				BCAF3D0127356D90000C1F71 /* SceneDelegate.swift in Sources */,
