@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol OnboardingView: AnyObject {
+protocol OnboardingView: ViewProtocol {
 
 }
 

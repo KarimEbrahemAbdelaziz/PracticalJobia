@@ -20,7 +20,7 @@ class OnboardingPresenterImplementation: OnboardingPresenter {
     }
 
     func login() {
-//        onboardingView.navigate(.login)
+        onboardingView?.navigate(OnboardingRoutes.login)
     }
 
     func signup() {

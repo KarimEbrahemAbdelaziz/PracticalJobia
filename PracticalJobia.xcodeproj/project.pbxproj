@@ -12,6 +12,9 @@
 		BC2B7435273EAD1F007BDBFB /* OnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC2B7433273EAD1F007BDBFB /* OnboardingViewController.xib */; };
 		BC2B7437273EAD2C007BDBFB /* OnboardingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2B7436273EAD2C007BDBFB /* OnboardingPresenter.swift */; };
 		BC2B7439273EAD49007BDBFB /* OnboardingConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2B7438273EAD49007BDBFB /* OnboardingConfigurator.swift */; };
+		BC2B743D273EB141007BDBFB /* NavigationRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2B743C273EB141007BDBFB /* NavigationRoute.swift */; };
+		BC2B743F273EB4A8007BDBFB /* OnboardingRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2B743E273EB4A8007BDBFB /* OnboardingRoutes.swift */; };
+		BC2B7441273EB6A1007BDBFB /* ViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2B7440273EB6A1007BDBFB /* ViewProtocol.swift */; };
 		BC3C291B2736C60300EE9934 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3C291A2736C60300EE9934 /* User.swift */; };
 		BC3C291F2736C73700EE9934 /* UserLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3C291E2736C73700EE9934 /* UserLogin.swift */; };
 		BC3C29212736C80400EE9934 /* LoginParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3C29202736C80400EE9934 /* LoginParameters.swift */; };
@@ -38,6 +41,9 @@
 		BC2B7433273EAD1F007BDBFB /* OnboardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingViewController.xib; sourceTree = "<group>"; };
 		BC2B7436273EAD2C007BDBFB /* OnboardingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPresenter.swift; sourceTree = "<group>"; };
 		BC2B7438273EAD49007BDBFB /* OnboardingConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingConfigurator.swift; sourceTree = "<group>"; };
+		BC2B743C273EB141007BDBFB /* NavigationRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRoute.swift; sourceTree = "<group>"; };
+		BC2B743E273EB4A8007BDBFB /* OnboardingRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingRoutes.swift; sourceTree = "<group>"; };
+		BC2B7440273EB6A1007BDBFB /* ViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewProtocol.swift; sourceTree = "<group>"; };
 		BC3C291A2736C60300EE9934 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		BC3C291E2736C73700EE9934 /* UserLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLogin.swift; sourceTree = "<group>"; };
 		BC3C29202736C80400EE9934 /* LoginParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginParameters.swift; sourceTree = "<group>"; };
@@ -103,6 +109,7 @@
 				BC2B7433273EAD1F007BDBFB /* OnboardingViewController.xib */,
 				BC2B7436273EAD2C007BDBFB /* OnboardingPresenter.swift */,
 				BC2B7438273EAD49007BDBFB /* OnboardingConfigurator.swift */,
+				BC2B743E273EB4A8007BDBFB /* OnboardingRoutes.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -119,6 +126,8 @@
 		BC2B743B273EB0F6007BDBFB /* NavigationRoute */ = {
 			isa = PBXGroup;
 			children = (
+				BC2B743C273EB141007BDBFB /* NavigationRoute.swift */,
+				BC2B7440273EB6A1007BDBFB /* ViewProtocol.swift */,
 			);
 			path = NavigationRoute;
 			sourceTree = "<group>";
@@ -414,12 +423,15 @@
 				BC3C29402736E1D900EE9934 /* LoginConfigurator.swift in Sources */,
 				BC3C291B2736C60300EE9934 /* User.swift in Sources */,
 				BC3C29322736D66500EE9934 /* FirebaseClientError.swift in Sources */,
+				BC2B743D273EB141007BDBFB /* NavigationRoute.swift in Sources */,
 				BC3C29212736C80400EE9934 /* LoginParameters.swift in Sources */,
 				BC3C29242736CCC000EE9934 /* AuthenticationGateway.swift in Sources */,
 				BC3C29292736D1D000EE9934 /* UserLoginError.swift in Sources */,
 				BC3C291F2736C73700EE9934 /* UserLogin.swift in Sources */,
 				BC3C29302736D4DD00EE9934 /* FirebaseClient.swift in Sources */,
+				BC2B743F273EB4A8007BDBFB /* OnboardingRoutes.swift in Sources */,
 				BC2B7434273EAD1F007BDBFB /* OnboardingViewController.swift in Sources */,
+				BC2B7441273EB6A1007BDBFB /* ViewProtocol.swift in Sources */,
 				BC2B7437273EAD2C007BDBFB /* OnboardingPresenter.swift in Sources */,
 				BCAF3CFF27356D90000C1F71 /* AppDelegate.swift in Sources */,
 				BC2B7439273EAD49007BDBFB /* OnboardingConfigurator.swift in Sources */,
