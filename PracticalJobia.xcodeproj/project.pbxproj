@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		774F2EE534156A67EBE11208 /* Pods_PracticalJobia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D424CFCD72C0F65AEE6F624 /* Pods_PracticalJobia.framework */; };
+		BC2B7434273EAD1F007BDBFB /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2B7432273EAD1F007BDBFB /* OnboardingViewController.swift */; };
+		BC2B7435273EAD1F007BDBFB /* OnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC2B7433273EAD1F007BDBFB /* OnboardingViewController.xib */; };
+		BC2B7437273EAD2C007BDBFB /* OnboardingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2B7436273EAD2C007BDBFB /* OnboardingPresenter.swift */; };
+		BC2B7439273EAD49007BDBFB /* OnboardingConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2B7438273EAD49007BDBFB /* OnboardingConfigurator.swift */; };
 		BC3C291B2736C60300EE9934 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3C291A2736C60300EE9934 /* User.swift */; };
 		BC3C291F2736C73700EE9934 /* UserLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3C291E2736C73700EE9934 /* UserLogin.swift */; };
 		BC3C29212736C80400EE9934 /* LoginParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3C29202736C80400EE9934 /* LoginParameters.swift */; };
@@ -30,6 +34,10 @@
 /* Begin PBXFileReference section */
 		05808325F39C49FDBFBD6940 /* Pods-PracticalJobia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PracticalJobia.debug.xcconfig"; path = "Target Support Files/Pods-PracticalJobia/Pods-PracticalJobia.debug.xcconfig"; sourceTree = "<group>"; };
 		9D424CFCD72C0F65AEE6F624 /* Pods_PracticalJobia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PracticalJobia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC2B7432273EAD1F007BDBFB /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		BC2B7433273EAD1F007BDBFB /* OnboardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingViewController.xib; sourceTree = "<group>"; };
+		BC2B7436273EAD2C007BDBFB /* OnboardingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPresenter.swift; sourceTree = "<group>"; };
+		BC2B7438273EAD49007BDBFB /* OnboardingConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingConfigurator.swift; sourceTree = "<group>"; };
 		BC3C291A2736C60300EE9934 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		BC3C291E2736C73700EE9934 /* UserLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLogin.swift; sourceTree = "<group>"; };
 		BC3C29202736C80400EE9934 /* LoginParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginParameters.swift; sourceTree = "<group>"; };
@@ -79,6 +87,40 @@
 				F6226BAF618DCDFF5A08CCFA /* Pods-PracticalJobia.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		BC2B7430273EACFB007BDBFB /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Signup;
+			sourceTree = "<group>";
+		};
+		BC2B7431273EAD04007BDBFB /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				BC2B7432273EAD1F007BDBFB /* OnboardingViewController.swift */,
+				BC2B7433273EAD1F007BDBFB /* OnboardingViewController.xib */,
+				BC2B7436273EAD2C007BDBFB /* OnboardingPresenter.swift */,
+				BC2B7438273EAD49007BDBFB /* OnboardingConfigurator.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		BC2B743A273EB0EA007BDBFB /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				BC2B743B273EB0F6007BDBFB /* NavigationRoute */,
+				BCAF3CFE27356D90000C1F71 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		BC2B743B273EB0F6007BDBFB /* NavigationRoute */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NavigationRoute;
 			sourceTree = "<group>";
 		};
 		BC3C29182736C5EB00EE9934 /* Core */ = {
@@ -189,7 +231,9 @@
 		BC3C29382736E1AB00EE9934 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				BC2B7431273EAD04007BDBFB /* Onboarding */,
 				BC3C29372736E1A700EE9934 /* Login */,
+				BC2B7430273EACFB007BDBFB /* Signup */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -215,11 +259,11 @@
 		BCAF3CFD27356D90000C1F71 /* PracticalJobia */ = {
 			isa = PBXGroup;
 			children = (
+				BC2B743A273EB0EA007BDBFB /* Application */,
 				BC3C29182736C5EB00EE9934 /* Core */,
 				BC3C292A2736D37000EE9934 /* EntityGateway */,
 				BC3C29362736E19800EE9934 /* Scenes */,
 				BC3C29252736CFD000EE9934 /* Extensions */,
-				BCAF3CFE27356D90000C1F71 /* AppDelegate.swift */,
 				BCAF3D0727356D92000C1F71 /* Assets.xcassets */,
 				BCAF3D0927356D92000C1F71 /* LaunchScreen.storyboard */,
 				BCAF3D0C27356D92000C1F71 /* Info.plist */,
@@ -291,6 +335,7 @@
 			files = (
 				BC3C293C2736E1C100EE9934 /* LoginViewController.xib in Resources */,
 				BCAF3D0B27356D92000C1F71 /* LaunchScreen.storyboard in Resources */,
+				BC2B7435273EAD1F007BDBFB /* OnboardingViewController.xib in Resources */,
 				BCAF3D0827356D92000C1F71 /* Assets.xcassets in Resources */,
 				BC3C292D2736D40D00EE9934 /* GoogleService-Info.plist in Resources */,
 			);
@@ -374,7 +419,10 @@
 				BC3C29292736D1D000EE9934 /* UserLoginError.swift in Sources */,
 				BC3C291F2736C73700EE9934 /* UserLogin.swift in Sources */,
 				BC3C29302736D4DD00EE9934 /* FirebaseClient.swift in Sources */,
+				BC2B7434273EAD1F007BDBFB /* OnboardingViewController.swift in Sources */,
+				BC2B7437273EAD2C007BDBFB /* OnboardingPresenter.swift in Sources */,
 				BCAF3CFF27356D90000C1F71 /* AppDelegate.swift in Sources */,
+				BC2B7439273EAD49007BDBFB /* OnboardingConfigurator.swift in Sources */,
 				BC3C293B2736E1C100EE9934 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
