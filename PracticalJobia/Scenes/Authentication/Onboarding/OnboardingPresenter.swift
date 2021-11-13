@@ -6,17 +6,15 @@
 //
 
 import Foundation
+import Resolver
 
 protocol OnboardingPresenter {
     func login()
 }
 
 class OnboardingPresenterImplementation: OnboardingPresenter {
-    private weak var onboardingView: OnboardingView?
-
-    init(onboardingView: OnboardingView) {
-        self.onboardingView = onboardingView
-    }
+    @WeakLazyInjected var onboardingView: OnboardingView?
+    @Injected private var loginUseCase: UserLoginUseCase
 
     func login() {
         onboardingView?.navigate(OnboardingRoutes.login)

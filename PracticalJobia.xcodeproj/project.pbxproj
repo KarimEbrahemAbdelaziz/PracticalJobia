@@ -11,7 +11,6 @@
 		BC2B7434273EAD1F007BDBFB /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2B7432273EAD1F007BDBFB /* OnboardingViewController.swift */; };
 		BC2B7435273EAD1F007BDBFB /* OnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC2B7433273EAD1F007BDBFB /* OnboardingViewController.xib */; };
 		BC2B7437273EAD2C007BDBFB /* OnboardingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2B7436273EAD2C007BDBFB /* OnboardingPresenter.swift */; };
-		BC2B7439273EAD49007BDBFB /* OnboardingConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2B7438273EAD49007BDBFB /* OnboardingConfigurator.swift */; };
 		BC2B743D273EB141007BDBFB /* NavigationRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2B743C273EB141007BDBFB /* NavigationRoute.swift */; };
 		BC2B743F273EB4A8007BDBFB /* OnboardingRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2B743E273EB4A8007BDBFB /* OnboardingRoutes.swift */; };
 		BC2B7441273EB6A1007BDBFB /* ViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2B7440273EB6A1007BDBFB /* ViewProtocol.swift */; };
@@ -32,6 +31,7 @@
 		BC3C293B2736E1C100EE9934 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3C29392736E1C100EE9934 /* LoginViewController.swift */; };
 		BC3C293C2736E1C100EE9934 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC3C293A2736E1C100EE9934 /* LoginViewController.xib */; };
 		BC3C293E2736E1CB00EE9934 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3C293D2736E1CB00EE9934 /* LoginPresenter.swift */; };
+		BC78AB9827400CFD009301F1 /* Onboarding+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC78AB9727400CFD009301F1 /* Onboarding+Injection.swift */; };
 		BCAF3CFF27356D90000C1F71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAF3CFE27356D90000C1F71 /* AppDelegate.swift */; };
 		BCAF3D0827356D92000C1F71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCAF3D0727356D92000C1F71 /* Assets.xcassets */; };
 		BCAF3D0B27356D92000C1F71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCAF3D0927356D92000C1F71 /* LaunchScreen.storyboard */; };
@@ -43,7 +43,6 @@
 		BC2B7432273EAD1F007BDBFB /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		BC2B7433273EAD1F007BDBFB /* OnboardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingViewController.xib; sourceTree = "<group>"; };
 		BC2B7436273EAD2C007BDBFB /* OnboardingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPresenter.swift; sourceTree = "<group>"; };
-		BC2B7438273EAD49007BDBFB /* OnboardingConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingConfigurator.swift; sourceTree = "<group>"; };
 		BC2B743C273EB141007BDBFB /* NavigationRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRoute.swift; sourceTree = "<group>"; };
 		BC2B743E273EB4A8007BDBFB /* OnboardingRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingRoutes.swift; sourceTree = "<group>"; };
 		BC2B7440273EB6A1007BDBFB /* ViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewProtocol.swift; sourceTree = "<group>"; };
@@ -64,6 +63,7 @@
 		BC3C29392736E1C100EE9934 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BC3C293A2736E1C100EE9934 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		BC3C293D2736E1CB00EE9934 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		BC78AB9727400CFD009301F1 /* Onboarding+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Onboarding+Injection.swift"; sourceTree = "<group>"; };
 		BCAF3CFB27356D90000C1F71 /* PracticalJobia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PracticalJobia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCAF3CFE27356D90000C1F71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCAF3D0727356D92000C1F71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -114,8 +114,8 @@
 				BC2B7432273EAD1F007BDBFB /* OnboardingViewController.swift */,
 				BC2B7433273EAD1F007BDBFB /* OnboardingViewController.xib */,
 				BC2B7436273EAD2C007BDBFB /* OnboardingPresenter.swift */,
-				BC2B7438273EAD49007BDBFB /* OnboardingConfigurator.swift */,
 				BC2B743E273EB4A8007BDBFB /* OnboardingRoutes.swift */,
+				BC78AB9727400CFD009301F1 /* Onboarding+Injection.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -452,8 +452,8 @@
 				BC2B7441273EB6A1007BDBFB /* ViewProtocol.swift in Sources */,
 				BC2B7437273EAD2C007BDBFB /* OnboardingPresenter.swift in Sources */,
 				BCAF3CFF27356D90000C1F71 /* AppDelegate.swift in Sources */,
-				BC2B7439273EAD49007BDBFB /* OnboardingConfigurator.swift in Sources */,
 				BC2B744A273ECD15007BDBFB /* Login+Injection.swift in Sources */,
+				BC78AB9827400CFD009301F1 /* Onboarding+Injection.swift in Sources */,
 				BC2B7446273EC924007BDBFB /* EntityGateways+Injection.swift in Sources */,
 				BC3C293B2736E1C100EE9934 /* LoginViewController.swift in Sources */,
 			);

@@ -11,8 +11,13 @@ import Resolver
 extension Resolver {
     public static func registerEntityGateways() {
         register { FirebaseClientImplementation() } .implements(FirebaseClient.self)
+            .scope(.application)
 
-        register { APIAuthenticationGatewayImplementation(firebaseClient: Resolver.resolve()) }
+        register {
+            APIAuthenticationGatewayImplementation(
+                firebaseClient: Resolver.resolve()
+            )
+        }
         .implements(AuthenticationGateway.self)
     }
 }

@@ -7,6 +7,7 @@
 
 import UIKit
 import Firebase
+import Resolver
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseApp.configure()
 
         window = UIWindow(frame: UIScreen.main.bounds)
-        let rootVC: OnboardingViewController = OnboardingConfigurator.configure()
+        let rootVC: OnboardingViewController = Resolver.resolve()
         let rootNC = UINavigationController(rootViewController: rootVC)
         rootNC.navigationBar.isHidden = true
 //        rootNC.interactivePopGestureRecognizer?.isEnabled = false

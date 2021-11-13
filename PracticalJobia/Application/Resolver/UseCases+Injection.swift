@@ -12,5 +12,6 @@ extension Resolver {
     public static func registerUseCases() {
         register { UserLoginUseCaseImplementation(authenticationGateway: Resolver.resolve()) }
         .implements(UserLoginUseCase.self)
+        .scope(.shared)
     }
 }

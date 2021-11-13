@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Resolver
 
 protocol OnboardingView: ViewProtocol {
 
@@ -13,12 +14,11 @@ protocol OnboardingView: ViewProtocol {
 
 class OnboardingViewController: UIViewController {
 
-    var presenter: OnboardingPresenter!
+    @Injected private var presenter: OnboardingPresenter
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
 
     @IBAction private func login(_ sender: UIButton) {
