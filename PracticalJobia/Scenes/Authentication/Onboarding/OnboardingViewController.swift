@@ -25,9 +25,7 @@ class OnboardingViewController: UIViewController {
         presenter.login()
     }
 
-    @IBAction private func signup(_ sender: UIButton) {
-        presenter.signup()
-    }
+    @IBAction private func signup(_ sender: UIButton) { }
 
 }
 

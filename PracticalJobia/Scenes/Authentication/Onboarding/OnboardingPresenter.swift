@@ -9,7 +9,6 @@ import Foundation
 
 protocol OnboardingPresenter {
     func login()
-    func signup()
 }
 
 class OnboardingPresenterImplementation: OnboardingPresenter {
@@ -21,9 +20,5 @@ class OnboardingPresenterImplementation: OnboardingPresenter {
 
     func login() {
         onboardingView?.navigate(OnboardingRoutes.login)
-    }
-
-    func signup() {
-//        onboardingView.navigate(.signup)
     }
 }

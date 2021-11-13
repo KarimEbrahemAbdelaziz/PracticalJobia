@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import Resolver
 
 enum OnboardingRoutes: Route {
     case login
@@ -15,7 +16,7 @@ enum OnboardingRoutes: Route {
     var destination: UIViewController {
         switch self {
         case .login:
-            let viewController = LoginModuleConfigurator.configure()
+            let viewController: LoginViewController = Resolver.resolve()
             return viewController
 //        case .signup:
 //            break

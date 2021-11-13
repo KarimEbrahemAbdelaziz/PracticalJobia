@@ -6,8 +6,9 @@
 //
 
 import UIKit
+import Resolver
 
-protocol LoginView: AnyObject {
+protocol LoginView: ViewProtocol {
 
 }
 
@@ -17,7 +18,7 @@ class LoginViewController: UIViewController {
     @IBOutlet private weak var passwordTextField: UITextField!
     @IBOutlet private weak var loginButton: UIButton!
 
-    var presenter: LoginPresenter!
+    @Injected private var presenter: LoginPresenter
 
     override func viewDidLoad() {
         super.viewDidLoad()

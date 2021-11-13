@@ -15,6 +15,10 @@
 		BC2B743D273EB141007BDBFB /* NavigationRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2B743C273EB141007BDBFB /* NavigationRoute.swift */; };
 		BC2B743F273EB4A8007BDBFB /* OnboardingRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2B743E273EB4A8007BDBFB /* OnboardingRoutes.swift */; };
 		BC2B7441273EB6A1007BDBFB /* ViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2B7440273EB6A1007BDBFB /* ViewProtocol.swift */; };
+		BC2B7444273EC86A007BDBFB /* Application+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2B7443273EC86A007BDBFB /* Application+Injection.swift */; };
+		BC2B7446273EC924007BDBFB /* EntityGateways+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2B7445273EC924007BDBFB /* EntityGateways+Injection.swift */; };
+		BC2B7448273EC96B007BDBFB /* UseCases+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2B7447273EC96B007BDBFB /* UseCases+Injection.swift */; };
+		BC2B744A273ECD15007BDBFB /* Login+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2B7449273ECD15007BDBFB /* Login+Injection.swift */; };
 		BC3C291B2736C60300EE9934 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3C291A2736C60300EE9934 /* User.swift */; };
 		BC3C291F2736C73700EE9934 /* UserLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3C291E2736C73700EE9934 /* UserLogin.swift */; };
 		BC3C29212736C80400EE9934 /* LoginParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3C29202736C80400EE9934 /* LoginParameters.swift */; };
@@ -28,7 +32,6 @@
 		BC3C293B2736E1C100EE9934 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3C29392736E1C100EE9934 /* LoginViewController.swift */; };
 		BC3C293C2736E1C100EE9934 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC3C293A2736E1C100EE9934 /* LoginViewController.xib */; };
 		BC3C293E2736E1CB00EE9934 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3C293D2736E1CB00EE9934 /* LoginPresenter.swift */; };
-		BC3C29402736E1D900EE9934 /* LoginConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3C293F2736E1D900EE9934 /* LoginConfigurator.swift */; };
 		BCAF3CFF27356D90000C1F71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAF3CFE27356D90000C1F71 /* AppDelegate.swift */; };
 		BCAF3D0827356D92000C1F71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCAF3D0727356D92000C1F71 /* Assets.xcassets */; };
 		BCAF3D0B27356D92000C1F71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCAF3D0927356D92000C1F71 /* LaunchScreen.storyboard */; };
@@ -44,6 +47,10 @@
 		BC2B743C273EB141007BDBFB /* NavigationRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRoute.swift; sourceTree = "<group>"; };
 		BC2B743E273EB4A8007BDBFB /* OnboardingRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingRoutes.swift; sourceTree = "<group>"; };
 		BC2B7440273EB6A1007BDBFB /* ViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewProtocol.swift; sourceTree = "<group>"; };
+		BC2B7443273EC86A007BDBFB /* Application+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Application+Injection.swift"; sourceTree = "<group>"; };
+		BC2B7445273EC924007BDBFB /* EntityGateways+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EntityGateways+Injection.swift"; sourceTree = "<group>"; };
+		BC2B7447273EC96B007BDBFB /* UseCases+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UseCases+Injection.swift"; sourceTree = "<group>"; };
+		BC2B7449273ECD15007BDBFB /* Login+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Login+Injection.swift"; sourceTree = "<group>"; };
 		BC3C291A2736C60300EE9934 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		BC3C291E2736C73700EE9934 /* UserLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLogin.swift; sourceTree = "<group>"; };
 		BC3C29202736C80400EE9934 /* LoginParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginParameters.swift; sourceTree = "<group>"; };
@@ -57,7 +64,6 @@
 		BC3C29392736E1C100EE9934 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BC3C293A2736E1C100EE9934 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		BC3C293D2736E1CB00EE9934 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
-		BC3C293F2736E1D900EE9934 /* LoginConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginConfigurator.swift; sourceTree = "<group>"; };
 		BCAF3CFB27356D90000C1F71 /* PracticalJobia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PracticalJobia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCAF3CFE27356D90000C1F71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCAF3D0727356D92000C1F71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -117,6 +123,7 @@
 		BC2B743A273EB0EA007BDBFB /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				BC2B7442273EC831007BDBFB /* Resolver */,
 				BC2B743B273EB0F6007BDBFB /* NavigationRoute */,
 				BCAF3CFE27356D90000C1F71 /* AppDelegate.swift */,
 			);
@@ -130,6 +137,16 @@
 				BC2B7440273EB6A1007BDBFB /* ViewProtocol.swift */,
 			);
 			path = NavigationRoute;
+			sourceTree = "<group>";
+		};
+		BC2B7442273EC831007BDBFB /* Resolver */ = {
+			isa = PBXGroup;
+			children = (
+				BC2B7443273EC86A007BDBFB /* Application+Injection.swift */,
+				BC2B7445273EC924007BDBFB /* EntityGateways+Injection.swift */,
+				BC2B7447273EC96B007BDBFB /* UseCases+Injection.swift */,
+			);
+			path = Resolver;
 			sourceTree = "<group>";
 		};
 		BC3C29182736C5EB00EE9934 /* Core */ = {
@@ -232,7 +249,7 @@
 				BC3C29392736E1C100EE9934 /* LoginViewController.swift */,
 				BC3C293A2736E1C100EE9934 /* LoginViewController.xib */,
 				BC3C293D2736E1CB00EE9934 /* LoginPresenter.swift */,
-				BC3C293F2736E1D900EE9934 /* LoginConfigurator.swift */,
+				BC2B7449273ECD15007BDBFB /* Login+Injection.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -420,11 +437,12 @@
 				BC3C29272736CFDC00EE9934 /* String+Extenions.swift in Sources */,
 				BC3C29352736D83B00EE9934 /* APIAuthenticationGateway.swift in Sources */,
 				BC3C293E2736E1CB00EE9934 /* LoginPresenter.swift in Sources */,
-				BC3C29402736E1D900EE9934 /* LoginConfigurator.swift in Sources */,
 				BC3C291B2736C60300EE9934 /* User.swift in Sources */,
 				BC3C29322736D66500EE9934 /* FirebaseClientError.swift in Sources */,
 				BC2B743D273EB141007BDBFB /* NavigationRoute.swift in Sources */,
+				BC2B7448273EC96B007BDBFB /* UseCases+Injection.swift in Sources */,
 				BC3C29212736C80400EE9934 /* LoginParameters.swift in Sources */,
+				BC2B7444273EC86A007BDBFB /* Application+Injection.swift in Sources */,
 				BC3C29242736CCC000EE9934 /* AuthenticationGateway.swift in Sources */,
 				BC3C29292736D1D000EE9934 /* UserLoginError.swift in Sources */,
 				BC3C291F2736C73700EE9934 /* UserLogin.swift in Sources */,
@@ -435,6 +453,8 @@
 				BC2B7437273EAD2C007BDBFB /* OnboardingPresenter.swift in Sources */,
 				BCAF3CFF27356D90000C1F71 /* AppDelegate.swift in Sources */,
 				BC2B7439273EAD49007BDBFB /* OnboardingConfigurator.swift in Sources */,
+				BC2B744A273ECD15007BDBFB /* Login+Injection.swift in Sources */,
+				BC2B7446273EC924007BDBFB /* EntityGateways+Injection.swift in Sources */,
 				BC3C293B2736E1C100EE9934 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
